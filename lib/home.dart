@@ -20,11 +20,11 @@ class helloApp extends StatelessWidget {
               centerTitle: true,
               backgroundColor: Colors.black,
             ),
-            body: const Column(
+            body:  Column(
             //  mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 
-                Padding(
+                const Padding(
                   padding: EdgeInsets.all(8.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -35,34 +35,34 @@ class helloApp extends StatelessWidget {
                   ),
                 ),
                 
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 70,
                   child: Padding(
                     padding: EdgeInsets.all(8.0),
                     child: imagePage(),
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10.0,
                 ),
-                Text('Messages',
+                const Text('Messages',
                   style: TextStyle(
                     fontWeight: FontWeight.w700,
                     // fontStyle: FontStyle.italic,
                     fontSize: 23.3,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20.0,
                 ),
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: const EdgeInsets.all(8.0),
                   child: Column(
                     children: [
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -72,7 +72,23 @@ class helloApp extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Padding(
+                      // ignore: sized_box_for_whitespace
+                      Container(
+                        height: 4.0,
+                        width: MediaQuery.sizeOf(context).width,
+                        decoration: BoxDecoration(
+                         boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.withOpacity(0.5),
+                              spreadRadius: .1,
+                              blurRadius: 1,
+                              offset:
+                                  const Offset(0, 1), // changes position of shadow
+                            ),
+                          ],
+                        ),
+                      ),
+                      const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -82,7 +98,7 @@ class helloApp extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -92,7 +108,7 @@ class helloApp extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -102,7 +118,7 @@ class helloApp extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -112,7 +128,7 @@ class helloApp extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -122,7 +138,7 @@ class helloApp extends StatelessWidget {
                           ],
                         ),
                       ),
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
